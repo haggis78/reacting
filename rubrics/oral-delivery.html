@@ -1,0 +1,347 @@
+<!doctype html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Speech Rubric</title>
+    <style>
+
+    span.Heading1Char {
+      color: black;
+    }
+    table {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+      vertical-align:top;
+    }
+    tr {
+      vertical-align:top;
+    }
+    th {
+      padding-bottom:3px; 
+    }
+    td,th {
+      padding-right:3px;
+      text-align:left;
+    }
+    input {
+      width: 25pt;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12pt;
+    }
+    .CatDesc {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8pt;
+      padding-bottom: 5px;
+    }
+    .CatTitle {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 11pt;
+      font-weight: bold;
+    }
+    .CatValue {
+      width: 0pt;
+      display:none;
+    }
+    .GrOption {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+      font-weight: bold;
+      padding: 8px 20px 8px 20px;
+      background-color: #ddd;
+      display: block;
+      float: left;
+      margin-right: 2px;
+      margin-bottom: 2px;
+    }
+    .GrDesc {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9pt;
+      padding-bottom: 5px;
+      clear:both;
+    }
+    </style>
+  </head>
+
+  <body lang="EN-US">
+    <table id="maintable" border="0" cellspacing="0" cellpadding="0" width="100%">
+      <thead>
+        <th>&nbsp;</th>
+        <th></th>
+        <th>Unacceptable</th>
+        <th>Poor</th>
+        <th>Okay</th>
+        <th>Very Good</th>
+        <th>Excellent</th>
+      </thead>
+      <tr>
+        <td>
+          <div class="CatTitle">Basic Expectations:</div>
+          <div class="CatDesc">Does the speech meet all the specific expectations of the character assignment? 
+          (Note that all following categories may be overriden by particular character requirements.)</div>
+        </td>
+        <td><input class="CatValue" type="text" name="basic-expectations" id="basic-expectations"></td>
+        <td width="17%">
+          <div class="GrOption">0</div>
+          <div class='GrOption'>5</div>
+          <div class="GrDesc">Met none; zero if plagiarized.</div> 
+        </td>
+        <td width="17%">
+          <div class="GrOption">6</div>
+          <div class="GrDesc">One expectation met.</div>
+        </td>
+        <td width="17%">
+          <div class="GrOption">7</div>
+          <div class="GrDesc">Some expectations met.</div>
+        </td>
+        <td width="17%">
+          <div class="GrOption">8</div>
+          <div class="GrDesc">Most expectations met.</div>
+        </td>
+        <td width="17%">
+          <div class="GrOption">9</div>
+          <div class="GrOption">10</div>
+          <div class="GrDesc">Excelled at meeting all expectations.</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="CatTitle">Delivery:</div>
+          <div class="CatDesc">Does the speaker employe effective voice inflection, eye contact, and hand gestures? Makes good connection with audience?</div>
+        </td>
+        <td><input class="CatValue" type="text" id="delivery"></td>
+        <td>
+          <div class="GrOption">0</div>
+          <div class="GrOption">5</div>
+          <div class="GrDesc">Lack of preparation, unengaged; zero if plagiarized.</div>
+        </td>
+        <td>
+          <div class="GrOption">6</div>
+          <div class="GrDesc">Barely engaged in good delivery practice; extensive "um"s; monotone.</div>
+        </td>
+        <td>
+          <div class="GrOption">7</div>
+          <div class="GrDesc">Some inflection, occasional eye contact, occasional gestures; some distracting "um"s.</div>
+        </td>
+        <td>
+          <div class="GrOption">8</div>
+          <div class="GrDesc">Strong connection with audience; inflection, gestures, eye contact all present.</div>
+        </td>
+        <td>
+          <div class="GrOption">9</div>
+          <div class="GrOption">10</div>
+          <div class="GrDesc">Unquestionably great delivery; audience captivated.</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="CatTitle">Argument:</div>
+          <div class="CatDesc">Is the speech logically organized? Does it make a clear and persuasive argument?</div>
+        </td>
+        <td><input class="CatValue" type="text" id="argument"></td>
+        <td>
+          <div class="GrOption">0</div>
+          <div class="GrOption">5</div>
+          <div class="GrDesc">Random ideas, generally incoherent; zero if plagiarized.</div>
+        </td>
+        <td>
+          <div class="GrOption">6</div>
+          <div class="GrDesc">No clear order; lacking introduction and conclusion.</div>
+        </td>
+        <td>
+          <div class="GrOption">7</div>
+          <div class="GrDesc">A little disordered; poorly employed evidence; rough transitions; no introduction or conclusion.</div>
+        </td>
+        <td>
+          <div class="GrOption">8</div>
+          <div class="GrDesc">Coherent order; generally effective use of evidence; intro and conclusion.</div>
+        </td>
+        <td>
+          <div class="GrOption">9</div>
+          <div class="GrOption">10</div>
+          <div class="GrDesc">Engaging intro; compelling conclusion; smooth transitions; logical order of points; effectivce use of quotes, evidence, and metaphors.</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="CatTitle">Evidence:</div>
+          <div class="CatDesc">Does the speech quote from the core texts or use other appropriate evidence, statistics, examples?</div>
+        </td>
+        <td><input class="CatValue" type="text" id="evidence"></td>
+        <td>
+          <div class="GrOption">0</div>
+          <div class="GrOption">5</div>
+          <div class="GrDesc">No evidence; zero if plagiarized.</div>
+        </td>
+        <td>
+          <div class="GrOption">6</div>
+          <div class="GrDesc">One quotation or bit of evidence.</div>
+        </td>
+        <td>
+          <div class="GrOption">7</div>
+          <div class="GrDesc">Two quotations or concrete evidence.</div>
+        </td>
+        <td>
+          <div class="GrOption">8</div>
+          <div class="GrDesc">Three quotations or concrete evidence.</div>
+        </td>
+        <td>
+          <div class="GrOption">9</div>
+          <div class="GrOption">10</div>
+          <div class="GrDesc">Laced with evidence.</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="CatTitle">Counter Arguments:</div>
+          <div class="CatDesc">Does the speech address counter arguments? Or does the speaker effectively answer questions and offer rebuttal?</div>
+        </td>
+        <td><input class="CatValue" type="text" id="counter-arguments"></td>
+        <td>
+          <div class="GrOption">0</div>
+          <div class="GrOption">5</div>
+          <div class="GrDesc">No counter-arguments addressed; unable or unwilling to respond to question and challenges in rebuttal; zero if plagiarized.</div>
+        </td>
+        <td>
+          <div class="GrOption">6</div>
+          <div class="GrDesc">Obvious counter-arguments not addressed; simple reiteration of argument in rebuttal.</div>
+        </td>
+        <td>
+          <div class="GrOption">7</div>
+          <div class="GrDesc">Counter-arguments addressed, but not effectively or charitably; mediocre rebuttal.</div>
+        </td>
+        <td>
+          <div class="GrOption">8</div>
+          <div class="GrDesc">Misses some counter-arguments in speech but responds well to challenges in rebuttal.</div>
+        </td>
+        <td>
+          <div class="GrOption">9</div>
+          <div class="GrOption">10</div>
+          <div class="GrDesc">Effectively anticipates and addresses counter arguments in speech; responds well to all questions; employs additional evidence as needed.</div>
+        </td>
+      </tr>
+    </table>
+    <div class="CatTitle" style="display:inline; vertical-align:top; margin-left:125px;font-size:13pt;">Total Grade:</div> 
+    <input type="text" id="total" style="font-weight:bold;vertical-align:top;">
+    <input type="text" id="grade" style="font-weight:bold;vertical-align:top;">
+    <textarea name="to_be_copied" id="to_be_copied" cols=70 rows=9 style="vertical-align:auto;font:8pt Arial, Helvetica, sans-serif;"></textarea>
+    <input type="submit" name="submitbutton" id="submitbutton" value="Copy text" style="width:150px;vertical-align:top;" onClick="copytext();">
+    <input type="submit" name="highlightbutton" id="highlightbutton" value="Load from text" style="width:150px;vertical-align:top;" onClick="highlightfromtext();">
+  </body>
+  <script type="text/javascript">
+  opts = document.getElementsByClassName('GrOption');
+  for (var i = 0; i < opts.length; i++) {
+    opts[i].addEventListener('click',clickhandler,false);
+  }
+
+  function clickhandler(){
+    row = this.parentNode.parentNode.rowIndex;
+    col = this.parentNode.cellIndex;
+    tbl = document.getElementById('maintable');
+    
+    values = this.parentNode.parentNode.querySelectorAll(".GrOption");
+
+    lastvalue = values[values.length-1].innerHTML;
+    
+    this.parentNode.parentNode.firstChild.nextSibling.nextSibling.nextSibling.firstChild.value = this.innerHTML + "/" + lastvalue + " " + tbl.rows[0].cells[col].innerText;
+    rownodes = this.parentNode.parentNode.getElementsByClassName('GrOption');
+    
+
+    for (var i = 0; i < rownodes.length; i++) {
+      rownodes[i].style.backgroundColor = "#ddd";
+    } 
+    this.style.backgroundColor = "#9cf";
+
+    var total, verbiage, child;
+    verbiage = '';
+    total = 0;
+    for (var i = 1, r; r = tbl.rows[i]; i++) {
+      child = r.cells[0].querySelector('.CatTitle');
+      if (child !== null) {
+        verbiage = verbiage + child.innerText + ' ';
+      }
+      child = r.cells[1].querySelector('input');
+
+      verbiage = verbiage + child.value + '\n';
+      if (child.value !== null) {
+        total = total + Number(child.value.match(/\d+/));
+      }
+    }
+
+    document.getElementById("total").value = total;
+    document.getElementById("to_be_copied").value = verbiage + "\nTotal points: " + total + " (" + lettergrade(total) + ")";
+    document.getElementById("grade").value = lettergrade(Number(document.getElementById("total").value));
+
+    document.getElementById("submitbutton").focus();
+  }
+
+  function highlightfromtext(){
+    var lines = document.getElementById("to_be_copied").value.split('\n');
+    var values = [];
+
+    for(var i = 0;i < lines.length;i++){
+      var re = new RegExp(/\d+/); //starts with digit, one or more
+      var m = re.exec(lines[i]);
+      if (m) {
+        values.push(m[0]);
+      }
+    }
+
+    tbl = document.getElementById('maintable');
+
+    for (i = 0; i < values.length-1; i++) {
+      var possible = tbl.rows[i+1].querySelectorAll(".GrOption");
+      for (j = 0; j < possible.length; j++) {
+        if (Number(possible[j].innerText) == Number(values[i])) {
+          possible[j].click();
+        }
+      }
+    }
+  }
+
+function lettergrade(t) {
+  t = t * 2;
+
+  if (t >= 95) 
+    return "A";
+  else if (t>= 90)
+    return "A-";
+  else if (t>= 87)
+    return "B+";
+  else if (t>= 83)
+    return "B";
+  else if (t>= 80)
+    return "B-";
+  else if (t>= 77)
+    return "C+";
+  else if (t>= 73)
+    return "C";
+  else if (t>= 70)
+    return "C-";
+  else if (t>= 67)
+    return "D+";
+  else if (t>= 63)
+    return "D";
+  else
+    return "F";
+}
+
+function copytext() {
+  document.getElementById("to_be_copied").select();
+  try {
+    return document.execCommand("copy");  // Security exception may be thrown by some browsers.
+  } catch (ex) {
+    console.warn("Copy to clipboard failed.", ex);
+    return false;
+  }
+}
+
+function toTitleCase(str) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    }
+  );
+}
+</script>
+</html>
